@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import image from '../assets/about.png';
 
 import { FaGithub, FaYoutube, FaDribble } from 'react-icons/fa'
@@ -35,15 +37,15 @@ const Banner = () => {
             />
           </motion.div>
           <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0 '>
-            potatoes run amok for this testing 
+           
             </motion.p>
-            <motion.div variants={fadeIn('up', 0.6 )} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contact Me</button>
+            {/* <motion.div variants={fadeIn('up', 0.6 )} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+              <button className='btn btn-lg'><Link to='contact'>Contact Me</Link></button>
               <a href="#" className='text-gradient btn-link'>My Portfolio</a>
-            </motion.div>
+            </motion.div> */}
             <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               
-              <a href="#"></a>
+              <a href="https://github.com/Caleb-A-B"></a>
               <FaGithub  />
              
             </motion.div>

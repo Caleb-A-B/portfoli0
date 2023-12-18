@@ -16,10 +16,12 @@ const Contact = () => {
             <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br /> together</h2>
           </div>
         </div>
-        <motion.form
+        <motion.form onsubmit="sendEmail(); reset()"
         variants={fadeIn('left', 0.3)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
-        className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-          <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
+        className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start' >
+          <h3 className='h3 mb-6' >Contact me here:</h3>
+          <p className='mb-6'> e-mail: calebabaca@gmail.com <br/> github: <a href='https://github.com/Caleb-A-B'>Click Here</a> </p>
+          {/* <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
           type="text"
           placeholder='Your name'
           />
@@ -28,7 +30,8 @@ const Contact = () => {
           placeholder='Your email'
           />
           <textarea className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12' placeholder='Your message' ></textarea>
-          <button className='btn btn-lg'>Send message</button>
+          <button type="submit" className='btn btn-lg'>Send message</button> */}
+
         </motion.form>
 
       </motion.div>

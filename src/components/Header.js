@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import BLogo from '../assets/BLogo.png';
 
@@ -10,7 +11,7 @@ const Header = () => {
           <a href="#">
             <img src={BLogo} alt="Logo" className="h-[90px]" />
           </a>
-          <button className='btn btn-sm'>Brainstorm and build </button>
+            {/* <Link to="contact" className='btn btn-sm'>Brainstorm and build</Link> */}
         </div>
       </div>
     </header>
